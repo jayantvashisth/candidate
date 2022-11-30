@@ -1,0 +1,286 @@
+.user-test-3-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.user-test-3-container .user-test-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+/* ***********left content styling*********** */
+
+
+.user-test-3-container .user-test-3 .left-content {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    height: calc(100vh - 70px);
+    overflow: auto;
+}
+
+.user-test-3-container .user-test-3 .left-content::-webkit-scrollbar{
+    display: none;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-top: 4px solid #00C49A;
+    border-radius: 2px;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .left-card {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    margin-top: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .left-card .img {
+    background-color: blue;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .left-card .card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 10px 20px 30px;
+    box-sizing: border-box;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .left-card .card-right span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+
+    color: #49484C;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .left-card .card-right p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+
+    color: #766E6E;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .system-compatible {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .system-compatible span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #333333;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 100px;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .instructions span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+
+    color: #302F2F;
+}
+
+.user-test-3-container .user-test-3 .left-content .left-body .instructions li {
+    margin-left: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+
+    color: #766E6E;
+}
+
+/* ************right content styling********** */
+.user-test-3-container .user-test-3 .right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+    height: calc(100vh - 70px);
+    background-color: #384455;
+    position: relative;
+    padding-top: 30px;
+    padding-right: 70px;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+.user-test-3-container .user-test-3 .right-content .ellipse {
+    position: absolute;
+    top: 307px;
+    right: 254px;
+    z-index: 5;
+}
+
+.user-test-3-container .user-test-3 .right-content .ellipse-2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.user-test-3-container .user-test-3 .right-content .big-box {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    width: 80%;
+    height: 250px;
+    padding: 30px 40px 0px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.user-test-3-container .user-test-3 .right-content .big-box span {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    /* or 133% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.user-test-3-container .user-test-3 .right-content .big-box p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 10px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.user-test-3-container .user-test-3 .right-content .big-box .time {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-test-3-container .user-test-3 .right-content .big-box .time span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+
+    color: #FFFFFF;
+}
+
+.user-test-3-container .user-test-3 .right-content .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    gap: 8px;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .policy {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .policy span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    z-index: 6;
+
+    color: #FFFFFF;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .policy input {
+    z-index: 7;
+    margin-left: 20px;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .button-container {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 7px 25px;
+    margin-top: 10px;
+    margin-left: 120px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .button-container svg {
+    cursor: pointer;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .button-container span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    cursor: pointer;
+    color: #FF6812;
+}
