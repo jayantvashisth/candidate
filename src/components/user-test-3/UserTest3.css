@@ -248,9 +248,11 @@
     color: #FFFFFF;
 }
 
-.user-test-3-container .user-test-3 .right-content .body .policy input {
+.user-test-3-container .user-test-3 .right-content .body .policy input[type=checkbox] {
     z-index: 7;
     margin-left: 20px;
+    border: 1px solid #DDDDDD;
+    background-color: black;
 }
 
 .user-test-3-container .user-test-3 .right-content .body .button-container {

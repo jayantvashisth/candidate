@@ -34,7 +34,7 @@
     background-color: #FFFFFF;
     border-top: 4px solid #00C49A;
     border-radius: 2px;
-    box-shadow: 1px 1px 1px 1px grey;
+    /* box-shadow: 1px 1px 1px 1px grey; */
 }
 
 .user-test-1-container .user-test-1-content .content .header {

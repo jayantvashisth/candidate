@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './UserTest1.css'
 import Navbar from '../navbar/Navbar'
 
@@ -80,17 +81,19 @@ function UserTest1() {
                 </div>
 
                 <div className="button">
-                    <div className="btn">
-                        <span>Next </span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="10" fill="white" />
-                            <path d="M8 15.2658L14 10.6128L8 5.9597" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
+                    <Link to="/test2">
+                        <div className="btn">
+                            <span>Next </span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="10" fill="white" />
+                                <path d="M8 15.2658L14 10.6128L8 5.9597" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className="footer">
-                   
+
                 </div>
             </div>
         </div>

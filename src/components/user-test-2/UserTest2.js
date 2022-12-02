@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './UserTest2.css'
 import Navbar from '../navbar/Navbar'
 
@@ -116,21 +117,24 @@ function UserTest2() {
                         </div>
                     </div>
                     <div className="button-container">
-                        <div className="back">
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="10.5" cy="10.1201" r="10" fill="white" />
-                                <path d="M12.5 6.0806L6.5 10.7337L12.5 15.3867" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <span>Back</span>
-                        </div>
-                        <div className="next">
-                            <span>Next</span>
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="10" cy="10.1201" r="10" fill="white" />
-                                <path d="M8 15.3859L14 10.7329L8 6.07982" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </div>
+                        <Link to="/">
+                            <div className="back">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10.5" cy="10.1201" r="10" fill="white" />
+                                    <path d="M12.5 6.0806L6.5 10.7337L12.5 15.3867" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Back</span>
+                            </div>
+                        </Link>
+                        <Link to="/test3">
+                            <div className="next">
+                                <span>Next</span>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10.1201" r="10" fill="white" />
+                                    <path d="M8 15.3859L14 10.7329L8 6.07982" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

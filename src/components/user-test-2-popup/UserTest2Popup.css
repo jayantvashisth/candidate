@@ -2,6 +2,8 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    position: absolute;
+    /* left: 50%; */
 }
 
 .user-test-2-popup-container .user-test-2 {

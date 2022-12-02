@@ -13,7 +13,7 @@ function UserTest3() {
                     <div className="left-body">
 
                         <div className="left-card">
-                            <div className="img" style={{width:"270px",height:"140px"}}></div>
+                            <div className="img" style={{width:"360px",height:"140px"}}></div>
                             <div className="card-right">
                                 <span>Why Camera?</span>
                                 <p>This test requires webcam access for proctoring. snapshot will be taken in every 30 secs.</p>
