@@ -82,7 +82,7 @@
 .user-test-1-container .user-test-1-content .content .user-test-1-body {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
 }
 
