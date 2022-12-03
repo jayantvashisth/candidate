@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './UserTest1.css'
 import Navbar from '../navbar/Navbar'
+import logo from '../../assets/logo.png'
 
 function UserTest1() {
     return (
@@ -93,7 +94,7 @@ function UserTest1() {
                 </div>
 
                 <div className="footer">
-
+                    <img src={logo} alt="logo" />
                 </div>
             </div>
         </div>

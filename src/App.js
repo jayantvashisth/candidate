@@ -13,6 +13,7 @@ import UserTest2 from './components/user-test-2/UserTest2';
 import UserTest3 from './components/user-test-3/UserTest3';
 import UserTest4 from './components/user-test-4/UserTest4';
 import UserTest5 from './components/user-test-5/UserTest5';
+import TestLoading from './components/test-loading/TestLoading';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/test3" exact element={<UserTest3 />} />
                     <Route path="/test4" exact element={<UserTest4 />} />
                     <Route path="/test5" exact element={<UserTest5 />} />
+                    <Route path="/testloading" exact element={<TestLoading />} />
                 </Routes>
             </div>
         </Router>

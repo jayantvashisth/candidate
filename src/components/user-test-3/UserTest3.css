@@ -262,6 +262,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 7px 25px;
     margin-top: 10px;
@@ -270,7 +271,15 @@
     cursor: pointer;
 }
 
-.user-test-3-container .user-test-3 .right-content .body .button-container svg {
+.user-test-3-container .user-test-3 .right-content .body .button-container a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 2px 0px;
+}
+
+.user-test-3-container .user-test-3 .right-content .body .button-container link svg {
     cursor: pointer;
 }
 
