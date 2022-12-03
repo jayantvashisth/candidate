@@ -1,0 +1,125 @@
+.test-end-warning-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.test-end-warning-container .test-end-warning-2 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 9, 9, 0.56);
+    /* justify-content: center; */
+    padding-top: 160px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.test-end-warning-container .test-end-warning-2-content {
+    width: 450px;
+    padding: 26px 25px 20px 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-end-warning-container .test-end-warning-2-content .header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-end-warning-container .test-end-warning-2-content .header .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+}
+
+.test-end-warning-container .test-end-warning-2-content .header .title svg {
+    cursor: pointer;
+}
+
+/* ***************body styling**************** */
+
+.test-end-warning-container .test-end-warning-2-content .body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.test-end-warning-container .test-end-warning-2-content .body span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-transform: capitalize;
+
+    color: #333333;
+}
+
+.test-end-warning-container .test-end-warning-2-content .btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.test-end-warning-container .test-end-warning-2-content .btn-container .no {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 70px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #999999;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.test-end-warning-container .test-end-warning-2-content .btn-container .no span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.test-end-warning-container .test-end-warning-2-content .btn-container .yes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 75px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #FF5757;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.test-end-warning-container .test-end-warning-2-content .btn-container .yes span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
