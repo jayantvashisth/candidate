@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './UserTest1.css'
 import Navbar from '../navbar/Navbar'
 import logo from '../../assets/logo.png'
+import UserTest2Popup from '../user-test-2-popup/UserTest2Popup'
 
 function UserTest1() {
+    const [toggleHelp,settoggleHelp]=useState(false)
     return (
         <div className="user-test-1-container">
-            <Navbar />
+            <Navbar settoggleHelp={()=>settoggleHelp(!toggleHelp)} />
+
             <div className="user-test-1-content">
+                {toggleHelp&&<UserTest2Popup/>
+
+                }
+                
                 <div className="content">
                     <div className="header">
                         <div className="title">

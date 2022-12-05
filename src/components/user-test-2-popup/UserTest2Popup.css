@@ -1,4 +1,7 @@
 .user-test-2-popup-container {
+    position: absolute;
+    left: 0px;
+    top:0px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -9,8 +12,10 @@
 .user-test-2-popup-container .user-test-2 {
     width: 100vw;
     height: 100vh;
+    background: transparent;
+    
     /* background-color: blue; */
-    background: rgba(10, 9, 9, 0.56);
+    background-color: rgba(10, 9, 9, 0.56);
     justify-content: center;
     align-items: center;
     display: flex;

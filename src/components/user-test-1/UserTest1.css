@@ -8,6 +8,7 @@
 }
 
 .user-test-1-container .user-test-1-content {
+    position: relative;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 100px;

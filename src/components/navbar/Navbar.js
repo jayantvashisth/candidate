@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import UserTest2popup from '../user-test-2-popup/UserTest2Popup';
 import './Navbar.css'
-function Navbar() {
+function Navbar(props) {
 
 
     // function displayPopUp() {
@@ -50,7 +50,7 @@ function Navbar() {
                 </Link>
             </div>
             <div className="right-heading">
-                <div className="help">
+                <div onClick={()=>props.settoggleHelp()} className="help">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3278_3027)">
                             <path d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00001C14.6668 4.31811 11.6821 1.33334 8.00016 1.33334C4.31826 1.33334 1.3335 4.31811 1.3335 8.00001C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />

@@ -5,8 +5,7 @@ import './UserTest2Popup.css'
 function UserTest2Popup() {
     return (
         <div className="user-test-2-popup-container">
-            <Navbar />
-
+           
             <div className="user-test-2">
                 <div className="user-test-2-content">
                     <div className="header">
