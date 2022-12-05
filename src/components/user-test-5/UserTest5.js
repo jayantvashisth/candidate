@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar2 from '../navbar-2/Navbar2'
 import './UserTest5.css'
+import ques from '../../assets/ques.svg'
+import poweredby from '../../assets/logo.png'
 
 function UserTest5() {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -74,11 +76,19 @@ function UserTest5() {
                             <div className="options-box">
                                 <div className="option-marked">
                                     <div className="option-content">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="10" cy="10" r="10" fill="#00C49A" />
-                                            <circle cx="9.9997" cy="9.99969" r="3.65385" fill="white" />
-                                        </svg>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis justo augue, vitae congue dolor condimentum eget. Vestibulum quis ligula in felis viverra pulvinar non vel lorem. Morbi lectus magna, consequat eget odio in, mattis condimentum eros. Nunc vel nulla tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</span>
+                                        <div className="marker">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10" cy="10" r="10" fill="#00C49A" />
+                                                <circle cx="9.9997" cy="9.99969" r="3.65385" fill="white" />
+                                            </svg>
+                                        </div>
+                                        <div className="question-detail">
+                                            <img src={ques} alt="ques image" />
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis justo augue, vitae congue dolor condimentum eget. Vestibulum quis ligula in felis viverra pulvinar non vel lorem. Morbi lectus magna, consequat eget odio in, mattis condimentum eros.
+                                            <br />
+                                            <br />
+                                            Nunc vel nulla tellus. Orci varius natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus</span>
+                                        </div>
                                     </div>
                                     <div className="save">
                                         <span>Saved!</span>
@@ -122,6 +132,9 @@ function UserTest5() {
                                     <span>Reset Answer</span>
                                 </div>
                             </div>
+                        </div>
+                        <div className="footer">
+                            <img src={poweredby} alt="logo" />
                         </div>
                     </div>
                 </div>
