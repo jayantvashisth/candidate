@@ -17,6 +17,8 @@ import TestLoading from './components/test-loading/TestLoading';
 import TestEndWarning from './components/test-end-warning/TestEndWarning';
 import TimeEnded from './components/time-ended/TimeEnded';
 import TestSubmitted from './components/test-submitted/TestSubmitted';
+import Test4popup from './components/user-test-4-sidebar/UserTest4Sidebar';
+import UserTest4Sidebar from './components/user-test-4-sidebar/UserTest4Sidebar';
 
 function App() {
     return (
@@ -33,6 +35,7 @@ function App() {
                     <Route path="/testendwarning" exact element={<TestEndWarning />} />
                     <Route path="/timeended" exact element={<TimeEnded />} />
                     <Route path="/testsubmitted" exact element={<TestSubmitted />} />
+                    <Route path="/test4popup" exact element={<UserTest4Sidebar />} />
                 </Routes>
             </div>
         </Router>

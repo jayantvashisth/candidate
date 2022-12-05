@@ -1,0 +1,83 @@
+.test-4-popup-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.test-4-popup-container .test-4-popup {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    height: calc(100vh - 70px);
+    background: rgba(10, 9, 9, 0.56);
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-right-container {
+    padding-top: 20px;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-right-container svg {
+    cursor: pointer;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 43vw;
+    border-radius: 0px 20px 0px 0px;
+    background-color: #384455;
+    height: calc(100vh - 70px);
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 15px;
+    overflow: auto;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container::-webkit-scrollbar {
+    display: none;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container .ques {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container .ques .not-selected {
+    display: flex;
+    background: white;
+    width: 41px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container .ques .selected {
+    display: flex;
+    background: #00C49A;
+    width: 41px;
+    height: 40px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.test-4-popup-container .test-4-popup .test-4-popup-left-container .ques p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
