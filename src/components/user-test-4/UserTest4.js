@@ -4,9 +4,14 @@ import TestLoading from '../test-loading/TestLoading';
 import UserTest2Popup from '../user-test-2-popup/UserTest2Popup';
 import './UserTest4.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom';
+import UserTest4Sidebar from '../user-test-4-sidebar/UserTest4Sidebar';
+import TestEndWarning from '../test-end-warning/TestEndWarning';
 
 function UserTest4() {
     const [isLoading, setIsLoading] = useState(true)
+    const [endTask, setEndTask] = useState(false)
+    const [pop, setPop] = useState(false)
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     setTimeout(() => {
@@ -19,12 +24,13 @@ function UserTest4() {
             {isLoading ? <div className='loader'>
                 <TestLoading />
             </div> : <div>
-                <Navbar2 />
+                <Navbar2 endtask={() => { setEndTask(!endTask) }} />
 
                 <div className="user-test-4-content">
-
+                    {pop && <UserTest4Sidebar hidePopup={() => { setPop(!pop) }} />}
+                    {endTask && <TestEndWarning endtask={() => { setEndTask(!endTask) }} />}
                     <div className="left-side-content">
-                        <div className="back">
+                        <div className="back" onClick={() => { setPop(true) }}>
                             <svg width="33" height="33" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.3081 22.1206C19.064 22.3646 19.064 22.7604 19.3081 23.0044C19.5521 23.2485 19.9479 23.2485 20.1919 23.0044L23.8125 19.3839C24.3007 18.8957 24.3007 18.1043 23.8125 17.6161L20.1919 13.9956C19.9479 13.7515 19.5521 13.7515 19.3081 13.9956C19.064 14.2396 19.064 14.6354 19.3081 14.8794L22.3036 17.875H13.5C13.1548 17.875 12.875 18.1548 12.875 18.5C12.875 18.8452 13.1548 19.125 13.5 19.125H22.3036L19.3081 22.1206Z" fill="white" />
                                 <circle cx="18.5" cy="18.5" r="18" stroke="white" />
@@ -57,14 +63,16 @@ function UserTest4() {
                                     </div>
                                 </div>
 
-                                <div className="next-button">
+                                <Link to="/test5">
+                                    <div className="next-button">
 
-                                    <span>Next</span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="10" cy="10" r="10" fill="white" />
-                                        <path d="M8 15.2661L14 10.613L8 5.95996" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
+                                        <span>Next</span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="10" fill="white" />
+                                            <path d="M8 15.2661L14 10.613L8 5.95996" stroke="#00C49A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </Link>
                             </div>
 
                             <div className="container">

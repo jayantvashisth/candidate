@@ -4,7 +4,7 @@ import Navbar2 from '../navbar-2/Navbar2'
 
 function TimeEnded() {
     return (
-        <div className="test-end-warning-container">
+        <div className="time-ended-container">
             <Navbar2 />
 
             <div className="test-end-warning-2">

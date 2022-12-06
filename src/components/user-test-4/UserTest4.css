@@ -5,7 +5,8 @@
     width: 100vw;
     overflow: hidden;
 }
-.user-test-4-container .loader{
+
+.user-test-4-container .loader {
     display: flex;
     width: 100%;
     align-items: center;
@@ -19,6 +20,7 @@
     flex-direction: row;
     height: calc(100vh - 70px);
     width: 100vw;
+    position: relative;
 }
 
 .user-test-4-container .user-test-4-content .left-side-content {
@@ -71,7 +73,7 @@
     display: none;
 }
 
-.user-test-4-container .user-test-4-content .right-side-content .footer{
+.user-test-4-container .user-test-4-content .right-side-content .footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -152,6 +154,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
 }
 
 .user-test-4-container .user-test-4-content .right-side-content .container {

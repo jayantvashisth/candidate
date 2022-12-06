@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
 }
 
 
@@ -48,10 +50,6 @@
     box-sizing: border-box;
     flex-direction: row;
     padding: 20px;
-}
-
-.user-test-3-container .user-test-3 .left-content .left-body .left-card .img {
-    background-color: blue;
 }
 
 .user-test-3-container .user-test-3 .left-content .left-body .left-card .card-right {

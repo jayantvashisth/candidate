@@ -6,16 +6,13 @@ import logo from '../../assets/logo.png'
 import UserTest2Popup from '../user-test-2-popup/UserTest2Popup'
 
 function UserTest1() {
-    const [toggleHelp,settoggleHelp]=useState(false)
+    const [toggleHelp, settoggleHelp] = useState(false)
     return (
         <div className="user-test-1-container">
-            <Navbar settoggleHelp={()=>settoggleHelp(!toggleHelp)} />
-
-            <div className="user-test-1-content">
-                {toggleHelp&&<UserTest2Popup/>
-
+            <Navbar settoggleHelp={() => settoggleHelp(!toggleHelp)} active={"test1"} />
+            <div className="user-test-1-content" style={toggleHelp ? { overflow: "hidden" } : { overflow: "auto" }}>
+                {toggleHelp && <UserTest2Popup settoggleHelp={() => settoggleHelp(!toggleHelp)} />
                 }
-                
                 <div className="content">
                     <div className="header">
                         <div className="title">

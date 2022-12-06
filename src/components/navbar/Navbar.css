@@ -77,6 +77,7 @@
     background: #DDDDDD;
     border-radius: 2px;
     padding: 8px 15px;
+    cursor: pointer;
 }
 
 .navbar-container .right-heading .time-button {

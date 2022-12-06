@@ -6,6 +6,7 @@
     height: 100vh;
     overflow: hidden;
     position: absolute;
+    z-index: 100;
     /* left: 50%; */
 }
 
@@ -13,7 +14,6 @@
     width: 100vw;
     height: 100vh;
     background: transparent;
-    
     /* background-color: blue; */
     background-color: rgba(10, 9, 9, 0.56);
     justify-content: center;
@@ -23,7 +23,7 @@
     border-radius: 2px;
 }
 
-.user-test-2-popup-container .user-test-2-content {
+.user-test-2-popup-container .user-test-2-content-popup {
     width: 450px;
     /* height: 380px; */
     padding: 26px 25px 20px 20px;
@@ -33,20 +33,20 @@
     gap: 20px;
 }
 
-.user-test-2-popup-container .user-test-2-content .header {
+.user-test-2-popup-container .user-test-2-content-popup .popup-header {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.user-test-2-popup-container .user-test-2-content .header .title {
+.user-test-2-popup-container .user-test-2-content-popup .popup-header .popup-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
 }
 
-.user-test-2-popup-container .user-test-2-content .header .title span {
+.user-test-2-popup-container .user-test-2-content-popup .popup-header .popup-title span {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
@@ -58,11 +58,11 @@
     color: #000000;
 }
 
-.user-test-2-popup-container .user-test-2-content .header .title svg {
+.user-test-2-popup-container .user-test-2-content-popup .popup-header .popup-title svg {
    cursor: pointer;
 }
 
-.user-test-2-popup-container .user-test-2-content .header .header-border {
+.user-test-2-popup-container .user-test-2-content-popup .popup-header .header-border {
     height: 1px;
     width: 100%;
     background-color: #DDDDDD;
@@ -72,14 +72,14 @@
 
 /* ***************body styling**************** */
 
-.user-test-2-popup-container .user-test-2-content .body {
+.user-test-2-popup-container .user-test-2-content-popup .body {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.user-test-2-popup-container .user-test-2-content .body p {
+.user-test-2-popup-container .user-test-2-content-popup .body p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -89,7 +89,7 @@
     color: #5A5858;
 }
 
-.user-test-2-popup-container .user-test-2-content .body .email {
+.user-test-2-popup-container .user-test-2-content-popup .body .email {
     width: 100%;
     height: 40px;
     display: flex;
@@ -102,7 +102,7 @@
     cursor: pointer;
 }
 
-.user-test-2-popup-container .user-test-2-content .body .email span {
+.user-test-2-popup-container .user-test-2-content-popup .body .email span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;

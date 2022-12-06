@@ -2,14 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './UserTest2.css'
 import Navbar from '../navbar/Navbar'
+import { useState } from 'react'
+import UserTest2Popup from '../user-test-2-popup/UserTest2Popup'
 
 function UserTest2() {
+    const [toggleHelp, settoggleHelp] = useState(false)
     return (
         <div className="user-test-2-container">
-            <Navbar />
-
+            <Navbar settoggleHelp={() => settoggleHelp(!toggleHelp)} active={"test2"} />
             <div className="user-test-2">
                 <div className="user-test-2-content">
+                    {toggleHelp && <UserTest2Popup settoggleHelp={() => settoggleHelp(!toggleHelp)} />}
                     <div className="header">
                         <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20" cy="20.4727" r="20" fill="#00C49A" fill-opacity="0.1" />

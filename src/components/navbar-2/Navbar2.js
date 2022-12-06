@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar2.css'
-function Navbar2() {
+function Navbar2(props) {
     return (
         <div className="navbar-container">
             <div className="left-heading">
@@ -12,21 +12,6 @@ function Navbar2() {
                 </div>
             </div>
             <div className="right-heading">
-                <div className="help">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_3278_3027)">
-                            <path d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00001C14.6668 4.31811 11.6821 1.33334 8.00016 1.33334C4.31826 1.33334 1.3335 4.31811 1.3335 8.00001C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M6.06006 6.00001C6.21679 5.55446 6.52616 5.17875 6.93336 4.93944C7.34056 4.70012 7.81932 4.61264 8.28484 4.69249C8.75036 4.77234 9.1726 5.01436 9.47678 5.3757C9.78095 5.73703 9.94743 6.19436 9.94673 6.66668C9.94673 8.00001 7.94673 8.66668 7.94673 8.66668" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 11.3333H8.00667" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_3278_3027">
-                                <rect width="16" height="16" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <span>Help</span>
-                </div>
                 <div className="time-button">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_3278_3022)">
@@ -40,6 +25,13 @@ function Navbar2() {
                         </defs>
                     </svg>
                     <span>01:55:00</span>
+                </div>
+                <div className="end-task" onClick={props.endtask}>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.24 4.42667C13.0789 5.26586 13.6501 6.33496 13.8815 7.49879C14.1129 8.66263 13.9939 9.86893 13.5397 10.9652C13.0856 12.0614 12.3165 12.9984 11.3299 13.6576C10.3432 14.3168 9.18325 14.6686 7.99665 14.6686C6.81004 14.6686 5.65008 14.3168 4.66343 13.6576C3.67678 12.9984 2.90774 12.0614 2.45356 10.9652C1.99937 9.86893 1.88044 8.66263 2.11179 7.49879C2.34314 6.33496 2.91439 5.26586 3.75331 4.42667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 1.33334V8.00001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>End Test</span>
                 </div>
             </div>
         </div>

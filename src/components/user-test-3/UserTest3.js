@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './UserTest3.css'
 import Navbar from '../navbar/Navbar'
 import { Link } from 'react-router-dom'
+import UserTest2Popup from '../user-test-2-popup/UserTest2Popup'
+import person from '../../assets/person.png'
 
 function UserTest3() {
+    const [toggleHelp, settoggleHelp] = useState(false)
     return (
         <div className="user-test-3-container">
-            <Navbar />
-
+            <Navbar settoggleHelp={() => settoggleHelp(!toggleHelp)} active={"test3"} />
             <div className="user-test-3">
+                {toggleHelp && <UserTest2Popup />}
+                {/* <div className="test3-content"> */}
                 <div className="left-content">
 
                     <div className="left-body">
 
                         <div className="left-card">
-                            <div className="img" style={{ width: "360px", height: "140px" }}></div>
+                            <div className="img" style={{ width: "290px", height: "140px" }}>
+                                <img src={person} alt="" />
+                            </div>
                             <div className="card-right">
                                 <span>Why Camera?</span>
                                 <p>This test requires webcam access for proctoring. snapshot will be taken in every 30 secs.</p>
@@ -95,6 +101,7 @@ function UserTest3() {
                         </div>
                     </div>
                 </div>
+                {/* </div> */}
             </div>
         </div>
     )

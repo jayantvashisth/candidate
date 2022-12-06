@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    z-index: 10;
 }
 
 
@@ -11,8 +13,9 @@
     flex-direction: row;
     width: 100%;
     gap: 20px;
-    height: calc(100vh - 70px);
-    background: rgba(10, 9, 9, 0.56);
+    /* height: calc(100vh - 70px); */
+    background: transparent;
+    background-color: rgba(10, 9, 9, 0.56);
 }
 
 .test-4-popup-container .test-4-popup .test-4-popup-right-container {
